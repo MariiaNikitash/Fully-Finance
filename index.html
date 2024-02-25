@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fully Finance</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="icon.png" type="image/png" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Yellowtail:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <h1 class="neonText">
+      Fully Finance <br />
+      $$$
+    </h1>
+    <p class="neonMO">Created by Masha Nikitash and Owen Rotenberg</p>
+    <h2 class="desc">
+      This budgeting tool intuitively demonstrates the power of compound
+      interest and how small savings could make an exponential difference.
+    </h2>
+    <h2 class="dataEntr">Enter your approximate monthly expenses</h2>
+
+    <form class="neonText" , id="numberForm">
+      <table>
+        <tr>
+          <td>
+            <label for="income">Income:</label>
+            <input
+              type="number"
+              id="income"
+              name="income"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="rent">Rent:</label>
+            <input
+              type="number"
+              id="rent"
+              name="rent"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="transportation">Transportation:</label>
+            <input
+              type="number"
+              id="transportation"
+              name="transportation"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="utilities">Utilities:</label>
+            <input
+              type="number"
+              id="utilities"
+              name="utilities"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="food">Food:</label>
+            <input
+              type="number"
+              id="food"
+              name="food"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="healthcare">Healthcare:</label>
+            <input
+              type="number"
+              id="healthcare"
+              name="healthcare"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="debt">Debt:</label>
+            <input
+              type="number"
+              id="debt"
+              name="debt"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="personal">Personal:</label>
+            <input
+              type="number"
+              id="personal"
+              name="personal"
+              placeholder="Enter Amount"
+              required
+            /><br />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <button type="button" id="myButton">Submit</button>
+    <p class="TotalRemainingDisp" , id="TotalRemainingDisp">
+      Total Remaining: $<span id="remaining">0</span>
+    </p>
+    <p class="FutureValueDisp" , id="FutureValueDisp">
+      Estimated Retirement Savings After <span id="YearCount">25</span> Years:
+      $<span id="future_val">0</span>
+    </p>
+    <div class="YearSliderContainer">
+      <input type="range" min="1" value="25" max="50" class="YearSlider" />
+    </div>
+    <p class="outro">
+      This is the return your investment will generate over time. <br>Historically,
+      the 30-year return of the S&P 500 has been roughly 10–12%
+    </p>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+
+    <footer class="footer">&copy; Copyright 2024 Owen and Masha</footer>
+  </body>
+</html>
