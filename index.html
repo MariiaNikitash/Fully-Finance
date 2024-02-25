@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Budget Tracker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+   <!-- <img src="moneysign.jpeg" alt="Dollar Sign">  -->
+    
+
+<link href='https://fonts.googleapis.com/css?family=Yellowtail:400' rel='stylesheet' type='text/css'>
+
+<h1 class="neonText">
+  Budget Tracker <br>
+  $$$
+</h1>
+<p class="neonMO">Created by Masha Nikitash and Owen Rotenberg</p>
+
+
+<h2 class="dataEntr">
+    Initial Data Entry:
+</h2>
+
+
+<form class="neonText", id="numberForm">
+  <table>
+    <label for="salary" >Salary:</label>
+    <input type="number" id="salary" name="salary" required><br>
+ 
+    <label for="rent">Rent:</label>
+    <input type="number" id="rent" name="rent" required><br>
+
+    <label for="food">Food:</label>
+    <input type="number" id="food" name="food" required><br>
+
+    <label for="utilities">Utilities:</label>
+    <input type="number" id="utilities" name="utilities" required><br>
+
+    <label for="transportation">Transportation:</label>
+    <input type="number" id="transportation" name="transportation" required><br>
+
+    <label for="fun">Fun:</label>
+    <input type="number" id="fun" name="fun" required><br>
+
+    <label for="debt">Debt:</label>
+    <input type="number" id="debt" name="debt" required><br>
+
+    <label for="health">Health Care:</label>
+    <input type=" " id="health" name="health" required><br>
+  </table>
+     <br><button type="submit">Submit</button>
+  </form>
+
+  <p class="TotalRemainingDisp", id="TotalRemainingDisp">Total Remaining: $<span id="remaining">0</span></p>
+  <p class="FutureValueDisp", id="FutureValueDisp">Future Value: $<span id="future_val">0</span></p>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+
+
+<footer class="footer">&copy; Copyright 2024 Owen and Masha</footer>
+
+
+</body>
+</html>
