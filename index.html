@@ -19,12 +19,10 @@
       Fully Finance <br />
       $$$
     </h1>
-    <p class="fullyhacks">
-      CSUF FullyHacks 2024
-    </p>
+    <p class="fullyhacks">CSUF FullyHacks 2024</p>
     <p class="neonMO">Created by Masha Nikitash and Owen Rotenberg</p>
     <p class="githubLink">
-      <a href="https://github.com/MariiaNikitash/Fully-Finance">
+      <a href="https://github.com/MariiaNikitash/Fully-Finance" target="_blank">
         <img
           alt="Static Badge"
           href="https://github.com/MariiaNikitash/Fully-Finance"
@@ -36,10 +34,10 @@
       interest and how small savings could make an exponential difference.<br />
       We hope to encourage users to minimize wasteful consumption of food,
       energy,<br />
-      and more by showing users how modest saving can make an big impact.<br />
+      and more by showing users how modest saving can make a big impact.<br />
     </h2>
     <h2 class="dataEntr">
-      Enter your approximate <u><b>monthly</b></u> expenses
+      Enter your approximate <u><b>monthly</b></u> income and expenses
     </h2>
 
     <form class="neonText" id="numberForm">
@@ -120,7 +118,7 @@
         </tr>
         <tr>
           <td>
-            <label for="debt">Debt Payments:</label>
+            <label for="debt">Debt:</label>
             <input
               type="number"
               id="debt"
@@ -151,8 +149,12 @@
         Total Remaining: $<span id="remaining">0</span>
       </p>
       <p class="FutureValueDisp" , id="FutureValueDisp">
-        Estimated Retirement Savings After <span id="YearCount">25</span> Years:
-        $<span id="future_val">0</span>
+        Principal if saved monthly over <span id="YearCount">25</span> Years:
+        $<span class="principal_val_disp" id="principal_val">0</span> <br />
+        Interest earned if invested over <span id="YearCount2">25</span> Years:
+        $<span class="interest_val_disp" id="interest_val">0</span> <br /> <br />
+        Total investment value if invested monthly over
+        <span id="YearCount3">25</span> Years: <br /><span class="money_sign">$</span><span class="future_val_disp" id="future_val">0</span>
       </p>
       <div class="YearSliderContainer">
         <input type="range" min="1" value="25" max="50" class="YearSlider" />

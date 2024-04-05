@@ -9,8 +9,16 @@ $(document).ready(function () {
     // Grab year on slider
     var year_on_slider = parseInt($("#YearCount").html());
 
+    // Calculate principal value
+    var principal_val = remaining * year_on_slider * 12;
+    $("#principal_val").html(numberWithCommas(principal_val));
+
+    // Calculate interest
+    fv = calcFV(remaining, year_on_slider);
+    fv = parseInt(fv.replace(/,/g, ""));
+    $("#interest_val").html(numberWithCommas(fv - principal_val));
+
     // Calculate future value
-    calcFV(remaining, year_on_slider);
   });
 });
 
@@ -20,17 +28,28 @@ $(".YearSlider").on("input", function (event) {
 
   // Grab year on slider
   var year_on_slider = $(this).val();
-  // Set html attribute so site can display current year_on_slider
+  // Set html attributes so site can display current year_on_slider
   $("#YearCount").html(year_on_slider);
+  $("#YearCount2").html(year_on_slider);
+  $("#YearCount3").html(year_on_slider);
 
   // Get remaining amount (str)(with commas) from html attribute
   var remaining = $("#remaining").html();
 
   // Remove commas and make int
-  remaining = parseInt(remaining.replace(",", ""));
+  remaining = parseInt(remaining.replace(/,/g, ""));
+
+  // Calculate principal value
+  var principal_val = remaining * year_on_slider * 12;
+  $("#principal_val").html(numberWithCommas(principal_val));
+
+  // Calculate interest
+  fv = calcFV(remaining, year_on_slider);
+  fv = parseInt(fv.replace(/,/g, ""));
+  $("#interest_val").html(numberWithCommas(fv - principal_val));
 
   // Calculate future value
-  calcFV(remaining, year_on_slider);
+
 });
 
 function calcRemaining() {
@@ -74,10 +93,9 @@ function calcFV(remaining, t) {
   fv = fv.toFixed(0);
   fv = numberWithCommas(fv);
 
-  console.log("Calculated future value: ", fv);
-
   // Set html attribute for display
   $("#future_val").html(fv);
+  return fv;
 }
 
 function numberWithCommas(x) {

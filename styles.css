@@ -139,6 +139,28 @@ button:hover {
   display: inline-block;
 }
 
+.principal_val_disp {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.interest_val_disp {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.money_sign {
+  color: #003dc2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.future_val_disp {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #003dc2;
+  font-size: 50px;
+  font-weight: bold;
+}
+
 .footer {
   font-size: 15px;
   color: rgb(44, 142, 200);
@@ -162,4 +184,5 @@ input {
 
 #YearCount {
   color: black;
+  font-size: 250
 }
