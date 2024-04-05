@@ -25,13 +25,23 @@ h1 {
   font-weight: 400;
   font-size: 5.2rem;
   font-family: Papyrus;
+  margin-bottom: 20px;
+}
+
+.fullyhacks {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+  font-family: Papyrus;
+  margin-top: 0px
 }
 
 h2 {
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.2
+  line-height: 1.2;
 }
 
 .neonMO,
@@ -39,6 +49,16 @@ h2 {
   color: white;
   font-size: 1.25rem;
   text-align: center;
+}
+
+.githubLink {
+  text-align: center;
+  :link {
+    color: #ffffff;
+  }
+  :visited {
+    color: #ffffff;
+  }
 }
 
 td {
@@ -67,7 +87,7 @@ button {
   color: black;
   display: block; /* Ensures the button takes up the full width */
   margin: 0 auto; /* Centers the button horizontally */
-} 
+}
 
 button {
   -webkit-border-radius: 7;
