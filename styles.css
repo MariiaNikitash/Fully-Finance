@@ -139,6 +139,10 @@ button:hover {
   display: inline-block;
 }
 
+.remaining {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .principal_val_disp {
   font-family: Arial, Helvetica, sans-serif;
 }
