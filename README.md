@@ -1,7 +1,7 @@
 # Fully Finance
 Fully Finance is a finance tool website designed to help you manage your finances more effectively by providing insights into potential investment returns based on your monthly income and expenses.
 
-### <center>Try it out: [<u>Fully Finance</u>](https://MariiaNikitash.github.io/Fully-Finance/)</center>
+### Try it out: [Fully Finance](https://MariiaNikitash.github.io/Fully-Finance/)
 
 ![Demo Video](readme-resources/demo.gif)
 
@@ -34,17 +34,13 @@ This formula assumes an initial principle of $0.
 ## 10% Average Annual Return?
 The S&P 500 is a stock market index that tracks the performance of the 500 largest publicly traded companies in the United States. It's considered a benchmark for the overall U.S. stock market.
 
-According to [<u>this article on investopedia.com,</u>](https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp) "The average annualized return since [...] 1957 through Dec. 31, 2023, is 10.26%" (Maverick 1).
+According to [this article on investopedia.com,](https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp) "The average annualized return since [...] 1957 through Dec. 31, 2023, is 10.26%" (Maverick 1).
 
 The stock market experiences ups and downs. Some years the S&P 500 might go up significantly, while others it might go down. The 10% average reflects this volatility, with good years balancing out lower ones.
 
 ## Contibutors
 
-<center>
-
-**Front-end** &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; **Back-end**
+**Front-end** &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; &nbsp; &nbsp; **Back-end**
 
 [![Static Badge](https://img.shields.io/badge/Mariia%20Nikitash-9B9B9B?style=for-the-badge&logo=github&labelColor=black)](https://github.com/MariiaNikitash) &emsp; &emsp; &emsp;
 [![Static Badge](https://img.shields.io/badge/Owen%20Rotenberg-9B9B9B?style=for-the-badge&logo=github&labelColor=black)](https://github.com/owen-rote)
-
-</center>
